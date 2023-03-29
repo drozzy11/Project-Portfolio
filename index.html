@@ -3,46 +3,67 @@
 
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1.0" /> 
     <title>Diego's Portfolio</title>
     <link rel="stylesheet" href= "assets/style.css">
   </head>
 
   <body>
     <header>
-        <h1>Portfolio</h1>
-        <nav id="contact-info">
-            <ul>
-                <li> <a href="#About-Me">About Me</a> </li>
-                <li><a href="#Contact-Me">Contact Me</a></li>
-                <li><a href="#Projects">Projects</a></li>
-            </ul>
-            
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#work">My Work</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+          </ul>
         </nav>
-     
-    </header>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <div class="about-me">
-        <p>Hello my name is Diego Ruiz. I am a graduate from Texas State University. I graduated in 2021 with a B.B.A in Marketing and am currently in a Coding Bootcamp. 
-        </p>
       </div>
-        <!--Pace an image of myself below-->
-        <img src="" alt="">
-  
-    </section>
-     <section id="contact">
-        <h2>Contact Me</h2>
-      <ul id="contact-list">
-        <li>Github:  <a href="https://github.com/drozzy11">drozzy11</a></li>
-        <li>LinkedIn: <a href="https://www.linkedin.com/in/diego-ruiz-jr/">Diego Ruiz</a></li>
-        <li>Email: <a href="ruiz101d@gmail.com"></a>ruiz101d@gmail.com</li>
-      </ul>
-    </section>
-    <section id="project-box">
-        <H2>Projects</H2>
-        <!--Insert Future Projects Here-->
-    </section>
+    </header>
+    <main>
+      <section id="about">
+        <div class="container">
+          <h1>About Me</h1>
+          <img src="./assets/images/Self portrait.jpeg" alt="Diego Ruiz's profile pictrue" />
+          <p>
+           My name is Diego Ruiz, I am a current channel analyst and recent Texas State Grduaate. I graduated with my B.B.A in Marketing, I am currently in a full stack coding bootcamp in hopes of gaining a more tech based career.
+          </p>
+        </div>
+      </section>
+      <section id="work">
+        <div class="container">
+          <h2>My Work</h2>
+          <div class="work-gallery">
+            <a href="https://www.example.com">
+              <img src="https://via.placeholder.com/300" alt="My Work 1" class="large-image" />
+            </a>
+            <a href="https://www.example.com">
+              <img src="https://via.placeholder.com/150" alt="My Work 2" />
+            </a>
+            <a href="https://www.example.com">
+              <img src="https://via.placeholder.com/150" alt="My Work 3" />
+            </a>
+            <a href="https://www.example.com">
+              <img src="https://via.placeholder.com/150" alt="My Work 4" />
+            </a>
+            <a href="https://www.example.com">
+              <img src="https://via.placeholder.com/150" alt="My Work 5" />
+            </a>
+            <a href="https://www.example.com">
+              <img src="https://via.placeholder.com/150" alt="My Work 6" />
+            </a>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+         <h2>Contact Me</h2>
+       <ul class="contact-list">
+         <li>Github:  <a href="https://github.com/drozzy11">drozzy11</a></li>
+         <li>LinkedIn: <a href="https://www.linkedin.com/in/diego-ruiz-jr/">Diego Ruiz</a></li>
+         <li>Email: <a href="ruiz101d@gmail.com"></a>ruiz101d@gmail.com</li>
+       </ul>
+     </section>
+    </main>
   </body>
 
 </html>
