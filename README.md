@@ -31,3 +31,6 @@ The following image shows the web application's appearance and functionality:
 ## Website-Link
 [Diego Ruz- Portfolio](https://drozzy11.github.io/Project-Portfolio/)
 
+## Disclaimer
+
+Small sections of code was assisted by use of Google and Reddit 
