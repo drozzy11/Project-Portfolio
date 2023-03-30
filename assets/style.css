@@ -4,7 +4,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    background-color: tan;
   }
+  
+
+/* styled the work, contact, and about sections */
+
+  #work, #contact, #about{
+    display: flex;
+    align-items: center;
+    margin: 2rem 1rem;
+  }
+
   /* Styled h2 for the entire site */
   h2 {
     display: flex;
@@ -15,10 +26,7 @@
     margin-bottom: 1rem;
     
   }
-  /* Set font family and default text color */
-  body {
-    color:  black;
-  }
+ 
   
   /* Set a maximum width for the content and center it on the page */
   .container {
@@ -31,10 +39,9 @@
   /* Style the header */
   header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 1rem 0;
-    background-color: black;
   }
   
   header h1 {
@@ -42,10 +49,12 @@
     font-weight: bold;
     align-items: center;
     margin-right: 1200px;
-    color: aqua;
+    color: white;
   }
 
-  
+  header .container{
+    border-left: 0;
+  }
   /* Style the navigation links */
   nav ul {
     display: flex;
@@ -58,23 +67,21 @@
   }
   
   nav a {
-    color: #333;
+    color: white;
     text-decoration: none;
     font-weight: bold;
   }
   
   nav a:hover {
-    color: white;
+    color: grey;
   }
   
   
-  /* Style the about section */
-  #about{
-    display: flex;
-    align-items: center;
-   margin: 2rem 0;
+  /* Styled the about section */
+  #about .container{
+    margin: auto;
   }
-  
+
   #about img{
    height: 200px;
    border-radius: 10px;
@@ -88,21 +95,18 @@
   }
   
   /* Style the work section */
-
-  #work{
-    display: flex;
-    align-items: center;
-   margin: 2rem 1rem;
+  #work .container{
+    margin: 0 0px 0 -101px;
   }
-    
-  .large-image{
-    width: 1000px;
-    height: 400px;
-    object-fit: cover;
+  #work h2{
+  margin-bottom: 2100px;
+  padding-right: 100px;
+}
+.big-pic{
+  margin: 0 200px 0 0;
+}
   
-   }
-  
-  #work img {
+   #work img {
     flex-basis: calc(33.333% - 1rem);
     margin-right: 1rem;
     margin-bottom: 1rem;
@@ -115,10 +119,15 @@
     margin-right: 0;
   
   }
+  .large-image{
+    width: 1000px;
+    height: 500px;
+    object-fit: cover;
+  }
   .textbox{
       position: absolute;
-      bottom: 20px;
-      right: 20px;
+      bottom: auto;
+      right: auto;
       background-color: grey;
       color: white;
       padding-left: 20px;
@@ -128,15 +137,52 @@
   
   /* Style the contact section */
 
-  #contac{
+  #contact h2{
     display: flex;
     align-items: center;
-   margin: 2rem 0;
+    margin: 1.5rem;
+    justify-content: left;
+    
+    
   }
   
   .contact-list {
     list-style: none;
     columns: auto 3;
+    column-gap: 5px;
+    margin-right: 20px;
   }
 
+
   
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    body {
+      width: 100%;
+      background-color: tan;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    #container {
+      width: 100%;
+      background-color: tan;
+    }
+  }
+  
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    nav {
+      width: 100%;
+      background-color: tan;
+    }
+  }
+
+  @media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    header {
+      width: 100%;
+      background-color: tan;
+    }
+  }
